@@ -1,8 +1,28 @@
 {
 	"name": "game-2d",
-	"private": true,
 	"version": "0.0.0",
+	"description": "An interactive 2D portfolio game built with Kaboom.js and TypeScript",
+	"private": true,
 	"type": "module",
+	"keywords": [
+		"game",
+		"2d",
+		"kaboom",
+		"typescript",
+		"portfolio",
+		"interactive",
+		"pixel-art"
+	],
+	"author": "Chetan Jain <jain.cj.chetan@gmail.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jainChetan81/game-2d.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jainChetan81/game-2d/issues"
+	},
+	"homepage": "https://github.com/jainChetan81/game-2d#readme",
 	"scripts": {
 		"dev": "vite --port 3000",
 		"build": "tsc && vite build",
@@ -13,6 +33,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.4",
+		"lefthook": "^1.13.6",
 		"typescript": "~5.8.3",
 		"vite": "npm:rolldown-vite@7.1.12"
 	},
