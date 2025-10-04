@@ -171,7 +171,7 @@ k.scene("main", async () => {
 	k.onKeyRelease(() => {
 		stopAnims();
 	});
-	k.onKeyDown((key) => {
+	k.onKeyDown(() => {
 		const keyMap = [
 			k.isKeyDown("right"),
 			k.isKeyDown("left"),
