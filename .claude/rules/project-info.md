@@ -1,60 +1,32 @@
-# Game 2D Project
+# Game 2D - Project Info
 
-## Project Overview
-This is a 2D game project built with TypeScript and Vite, using the Kaboom.js game library.
+## Stack
+- TypeScript (~5.8.3) - strict mode
+- Kaboom.js (3000.1.17) - game engine
+- Vite (rolldown-vite@7.1.12) - dev server on port 3000
+- Biome (^2.2.4) - linter/formatter (tabs, double quotes, auto-organize imports)
+- Bun - package manager
+- Lefthook - git hooks (pre-commit: format staged files, pre-push: lint + type-check)
 
-## Tech Stack
-- **Build Tool**: Vite (using rolldown-vite@7.1.12)
-- **Language**: TypeScript (~5.8.3)
-- **Game Library**: Kaboom (3000.1.17)
-- **Linter/Formatter**: Biome (^2.2.4)
-- **Package Manager**: Bun
+## Files
+- `src/main.ts` - game scene, sprite loading, player movement, collision, camera
+- `src/kaboomCtx.ts` - kaboom instance (debug mode on in dev, off in production)
+- `src/constants.ts` - scaleFactor (4), dialogueData for interactive objects
+- `src/utils.ts` - displayDialogue(), setCamScale()
+- `src/style.css` - UI styles (textbox, buttons, monogram font)
+- `public/spritesheet.png` - character animations (39x31 sliced)
+- `public/map.png` + `map.json` - game map and boundaries
+- `index.html` - canvas element (#game) and dialogue UI (#textbox-container)
 
-## Project Structure
-```
-game-2d/
-├── src/
-│   ├── main.ts          # Entry point (imports CSS only, ready for game code)
-│   └── style.css        # Generic styles (buttons, links, root styles)
-├── public/              # Static assets
-├── index.html           # HTML entry point with #app div
-├── vite.config.ts       # Vite configuration
-├── biome.json          # Biome linter/formatter config
-├── tsconfig.json       # TypeScript configuration
-└── package.json        # Dependencies and scripts
-```
+## Game Logic
+- Player moves by clicking/tapping or arrow keys
+- Character has walk/idle animations for 4 directions
+- Camera follows player with responsive scaling
+- Colliding with named boundaries triggers dialogue
+- Dialogue displays character-by-character in HTML textbox
+- Close dialogue with button or Enter key
 
-## Available Scripts
-
-### Development
-- `bun run dev` - Start development server on port 3000
-- `bun run build` - Build for production (runs TypeScript compiler + Vite build)
-- `bun run preview` - Preview production build
-
-### Code Quality
-- `bun run lint` - Check code with Biome (linting + formatting)
-- `bun run lint:fix` - Fix linting issues automatically
-- `bun run format` - Format code with Biome
-
-## Biome Configuration
-- **Formatter**: Enabled, uses tabs, double quotes
-- **Linter**: Enabled with recommended rules
-- **Import Organization**: Auto-organize imports on save
-- Config file: `biome.json`
-
-## Vite Configuration
-- Basic setup in `vite.config.ts`
-- Dev server runs on port 3000
-- Uses rolldown-vite for faster builds
-
-## Development Guidelines
-1. Run `bun run lint` before committing
-2. Use Biome for consistent formatting (tabs, double quotes)
-3. TypeScript strict mode enabled
-4. Entry point is `src/main.ts` which renders into `#app` div
-5. Use Kaboom.js for game development features
-
-## Notes
-- Boilerplate code has been removed
-- Project is set up and ready for game development
-- All generic styles are preserved in style.css
+## Scripts
+- `bun run dev` - dev server
+- `bun run build` - TypeScript compile + build
+- `bun run lint` / `lint:fix` / `format` - Biome code quality

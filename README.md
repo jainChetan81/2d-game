@@ -148,13 +148,11 @@ Dialogues are defined in `constants.ts` with:
 - Close button to dismiss and continue exploring
 
 ### Game Features
-✨ **Interactive Portfolio**: Learn about the developer by exploring their virtual space  
-🎮 **Smooth Controls**: Click/tap to move with pathfinding  
-📱 **Cross-Platform**: Works on desktop and mobile devices  
-🎨 **Pixel Art Style**: Retro aesthetic with custom sprites and tilemap  
-🔗 **External Links**: Direct links to GitHub, YouTube, resume, and contact info  
-⚡ **Fast Loading**: Optimized with Vite for quick startup times  
+✨ **Interactive Portfolio**: Learn about the developer by exploring their virtual space
+🎮 **Smooth Controls**: Click/tap to move with pathfinding
+📱 **Cross-Platform**: Works on desktop and mobile devices
+🎨 **Pixel Art Style**: Retro aesthetic with custom sprites and tilemap
+🔗 **External Links**: Direct links to GitHub, YouTube, resume, and contact info
+⚡ **Fast Loading**: Optimized with Vite for quick startup times
 
----
 
-_Made with ❤️ using Kaboom.js and TypeScript_

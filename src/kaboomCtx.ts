@@ -6,3 +6,5 @@ export const k = kaboom({
 	canvas: document.getElementById("game") as HTMLCanvasElement,
 	debug: import.meta.env.MODE !== "production",
 });
+
+export type KABOOM_CTX = typeof k;
