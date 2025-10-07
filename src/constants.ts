@@ -1,23 +1,21 @@
 export const scaleFactor = 3;
 
 export const dialogueData = {
-	pc: `This is my PC. I work mostly in JavaScript/TypeScript these days.
-    I've made a couple of games in that language. I also like Golang and Python. Anyway regardless of the language, I just like programming.
-    Here is my <a href="https://github.com/jslegenddev" target="_blank">Github</a>!`,
-	"cs-degree": `This is my CS degree. I hung it on the wall because I'm proud of it. It was a very theoretical degree but I think it gave me a good foundation.`,
-	"sofa-table": `That's my sofa. I like to relax here and watch YouTube.
-  I also make game programming tutorials on YouTube. Go sub to <a href="https://youtube.com/@jslegenddev" target="_blank">my channel</a>! (If you like the content)
-  You'll learn how I built this portfolio you're currently playing through!`,
-	tv: `That's my TV. I've been watching tech youtubers a lot recently like :
-   <a href="https://www.youtube.com/@ThePrimeTimeagen" target="_blank">Theprimeagen</a>, <a href="https://www.youtube.com/@t3dotgg" target="_blank">Theo - t3.gg</a>,
-  <a href="https://www.youtube.com/@PirateSoftware" target="_blank">PirateSoftware</a> (sometimes) and <a href="https://www.youtube.com/@MelkeyDev" target="_blank">Melkey</a>!`,
-	bed: `This where I sleep. Great ideas comes when I'm lying on my bed. When an idea strikes, I often have to write it down or else I won't be able to sleep because my mental energy is consumed by it.`,
-	resume: `This is my desk and on it is my resume. <a href="https://github.com/JSLegendDev/Resume/blob/main/JSLegend%20Resume-1.pdf" target="_blank">Check it out?</a>
-  Contact me at jslegend@protonmail.com if you have any interesting job opportunities!`,
-	projects: `Info about this portfolio : It's made with the Kaboom.js library which is a library for making games in JavaScript.
-  Text is rendered with HTML/CSS. So the textbox you're currently reading is not rendered within canvas. Learn more about how to use
-  Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
-	library: `There are a lot of programming books on my shelves. There is even one in French (I also speak French btw).
-  I probably only read one of them. Who else compulsively buys technical books without ever finishing them?`,
-	exit: `If you want to exit JSLegendDev's portfolio, just close the tab.`,
+	pc: `This is my PC. I work mostly in React, Next.js, and TypeScript these days.
+    I'm a Software Development Engineer with over 4 years of experience in creating high-impact digital solutions. I specialize in Web Performance Optimization and Core Web Vitals improvements.
+    Check out my <a href="https://github.com/jainChetan81" target="_blank">Github</a>!`,
+	"cs-degree": `This is my BTech + MTech Dual degree from Jaypee Institute of Information & Technology, Noida. I graduated in Feb 2021. It gave me a strong foundation in computer science and engineering.`,
+	"sofa-table": `That's my sofa. I like to relax here and think about web performance optimizations and new tech.
+  I've written technical blogs: <a href="https://jain-chetan.medium.com/express-vs-fastify-a-performace-comparison-1b0930869530" target="_blank">Express vs Fastify: A Performance Comparison</a> and <a href="https://dev.to/jainchetan81/webpack-performance-tuning-minimizing-build-times-for-large-projects-1e3c" target="_blank">Webpack Performance Tuning</a>!`,
+	tv: `That's my TV. I keep up with the latest in web development and performance optimization.
+   I'm passionate about improving Core Web Vitals, reducing bundle sizes, and optimizing build times - I once improved build times by 80% and reduced bundle sizes by 44%!`,
+	bed: `This is where I sleep. Great ideas about performance optimizations often strike me here. When I think of a way to reduce INP or improve CLS, I have to write it down or I can't sleep!`,
+	resume: `This is my desk and on it is my resume. I'm currently working as a Software Development Engineer - 2 at Zepto, where I migrated the Customer Web to React 19 and Next.js 15.
+  <a href="https://linkedin.com/in/chetan-jain" target="_blank">Connect with me on LinkedIn</a> or contact me at jain.cj.chetan@gmail.com if you have interesting opportunities!`,
+	projects: `Info about my projects: I've built a Dynamic Form Builder with Next.js, Tailwind, TypeScript, tRPC, Prisma, and MySQL.
+  Check it out at <a href="https://github.com/jainChetan81/examples" target="_blank">github.com/jainChetan81/examples</a>.
+  This portfolio is made with Kaboom.js - a JavaScript game library. The text is rendered with HTML/CSS outside the canvas.`,
+	library: `There are programming books on my shelves about React, Next.js, Performance Optimization, and Web Development.
+  I'm passionate about learning - my skills include React, Next.js, Jest, Mocha, PWA development, SEO optimization, and Test Driven Development.`,
+	exit: `If you want to exit Chetan's portfolio, just close the tab. Thanks for visiting!`,
 };

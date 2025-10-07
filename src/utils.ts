@@ -18,7 +18,7 @@ export function displayDialogue(text: string, onDisplayEnd: () => void) {
 		}
 
 		clearInterval(intervalRef);
-	}, 1);
+	}, 20);
 
 	const closeBtn = document.getElementById("close") as HTMLButtonElement;
 
