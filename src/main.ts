@@ -3,7 +3,7 @@ import { k } from "./kaboomCtx";
 import "./style.css";
 import { displayDialogue, setCamScale } from "./utils";
 
-k.loadSprite("spritesheet", "/public/spritesheet.png", {
+k.loadSprite("spritesheet", "./spritesheet.png", {
 	sliceX: 39, //number of frames in x direction
 	sliceY: 31, //number of frames in y direction
 	anims: {
@@ -69,18 +69,6 @@ k.scene("main", async () => {
 					k.pos(boundary.x, boundary.y),
 					boundary.name,
 				]);
-
-				if (boundary.name) {
-					player.onCollide(boundary.name, () => {
-						player.isInDialogue = true;
-						displayDialogue(
-							dialogueData[boundary.name as keyof typeof dialogueData],
-							() => {
-								player.isInDialogue = false;
-							},
-						);
-					});
-				}
 			}
 
 			continue;
@@ -93,6 +81,25 @@ k.scene("main", async () => {
 						(map.pos.y + entity.y) * scaleFactor,
 					);
 					k.add(player);
+				}
+			}
+		}
+	}
+
+	// Register collision handlers after player is added to the scene
+	for (const layer of layers) {
+		if (layer.name === "boundaries") {
+			for (const boundary of layer.objects) {
+				if (boundary.name) {
+					player.onCollide(boundary.name, () => {
+						player.isInDialogue = true;
+						displayDialogue(
+							dialogueData[boundary.name as keyof typeof dialogueData],
+							() => {
+								player.isInDialogue = false;
+							},
+						);
+					});
 				}
 			}
 		}
